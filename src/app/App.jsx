@@ -21,7 +21,7 @@ export default function App() {
                 Get Location
             </button>
 
-            {isLoading && <p>Loading position...</p>}
+            {isLoading && <p className={'paragraph'}>Loading position...</p>}
             {error && <p className={'paragraph'}>{error}</p>}
             {!isLoading && !error && lat && lng && (
                 <p className={'paragraph'}>
